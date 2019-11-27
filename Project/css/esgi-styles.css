@@ -1,0 +1,145 @@
+/* ~ Reset ~ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, th, td,
+table, caption, tbody, tfoot, thead, tr, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+/* ~ END Reset ~ */
+
+/* ~ Custom ~ */
+body {font-family: 'BNP'; background: #f5f5f5;}
+/* ~ END Custom ~ */
+
+/* ~ Fonts ~ */
+@font-face {font-family: "BNP"; src: url(../fonts/BNPP\ Sans.ttf) format("truetype"); font-weight: 300; font-style: normal; font-stretch: normal;}
+@font-face {font-family: "BNPBold"; src: url(../fonts/BNPP\ Sans\ Bold.ttf) format("truetype"); font-weight: 300; font-style: normal; font-stretch: normal;}
+@font-face {font-family: "BNPLight"; src: url(../fonts/BNPP\ Sans\ Light.ttf) format("truetype"); font-weight: 300;font-style: normal; font-stretch: normal;}
+/* ~ END Fonts ~ */
+
+/* ~ Grid ~ */
+.esgi-grid {margin-right: -10px; margin-left: -10px; min-height: calc(100vh - 152px); height: 1px;}
+.esgi-grid-cell {float: left;}
+.esgi-grid-gutter {margin-right: 10px; margin-left: 10px;}
+.esgi-clear {clear: both; line-height: 0;}
+.esgi-grid1 {width: calc(100% / 12 * 1);}
+.esgi-grid2 {width: calc(100% / 12 * 2);}
+.esgi-grid3 {width: calc(100% / 12 * 3);}
+.esgi-grid4 {width: calc(100% / 12 * 4);}
+.esgi-grid5 {width: calc(100% / 12 * 5);}
+.esgi-grid6 {width: calc(100% / 12 * 6);}
+.esgi-grid7 {width: calc(100% / 12 * 7);}
+.esgi-grid8 {width: calc(100% / 12 * 8);}
+.esgi-grid9 {width: calc(100% / 12 * 9);}
+.esgi-grid10 {width: calc(100% / 12 * 10);}
+.esgi-grid11 {width: calc(100% / 12 * 11);}
+.esgi-grid12 {width: calc(100% / 12 * 12);}
+/* ~ END Grid ~ */
+
+/* ~ Section ~ */
+.esgi-section {width: 1240px; margin: 0 auto; text-align: left;}
+/* ~ END Section ~ */
+
+/* ~ ToolBox Elements ~ */
+/*Links*/
+a {text-decoration: none; color: #007ba5; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+a:hover {-webkit-transition: all 0.3s ease; opacity: 1; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+
+/* Standard button */
+.esgi-button {display: inline-block; padding: 18px 20px; cursor: pointer; color: #fff; font-size: 0.875rem; background: #007ba5; text-align: center; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; box-sizing: border-box;}
+.esgi-button:hover {text-decoration: none;}
+/* ~ END ToolBox Elements ~ */
+
+/* ~ Styles ~ */
+
+/* - Header - */
+.esgi-logo {max-width: 115px;}
+/*straightLine*/
+#esgi-straightLine {background: #007ba5; width: 100%; height: 22px; margin-bottom: 16px;}
+/* - END Header - */
+
+/* - Main - */
+#esgi-content {margin-top: 32px;}
+#esgi-content h1 {font-size: 2rem; font-family: "BNPBold"; margin-bottom: 16px;}
+#esgi-content figure {padding: 16px; background: #fff; display: inline-block; margin-bottom: 16px; overflow: hidden; border-radius: 75px}
+#esgi-content figure {-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease;-o-transition: all 0.4s ease; transition: all 0.4s ease;}
+#esgi-content figure:hover {-webkit-box-shadow: 0 0 5px 1px #888;box-shadow: 0 0 5px 1px #888;} 
+#esgi-content p {margin-bottom: 16px;}
+#esgi-content span {margin-bottom: 16px; display: block;}
+#esgi-content a {margin-bottom: 16px; display: block}
+#esgi-content ul {margin: 0 0 16px 16px; list-style: initial;}
+#esgi-content ul li { margin-bottom: 8px;}
+
+.esgi-form-holder {padding: 32px; box-sizing: border-box; display: table; margin: 0 auto;}
+.esgi-form-holder:after {content: ""; clear: both; line-height: 0;}
+.esgi-form-holder form,
+.esgi-form-holder > div {float: left;}
+.esgi-form-holder > div {text-align: center; padding: 16px; color: #eb3b5a; font-weight: bold; max-width: 400px; line-height: 24px;}
+.esgi-form-holder > div img {max-width: 85px; display: block; margin: 16px auto;}
+.esgi-form-holder > div a {float: right; color: #4c4c4c}
+.esgi-form-holder form select {margin-bottom: 16px; display: block; padding: 4px; background: #fff; border-radius: 3px; border: 1px #888 solid;}
+.esgi-form-holder form h2 {font-size: 1.5rem; margin-bottom: 16px; font-family: "BNPBold";}
+.esgi-form-holder form .esgi-inputs {display: block; padding: 4px; border-radius: 3px; border: 1px #888 solid; outline: 0; -webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease;-o-transition: all 0.4s ease;    transition: all 0.4s ease;}
+.esgi-form-holder form .esgi-inputs:hover {-webkit-box-shadow: 0 0 3px 1px #888;box-shadow: 0 0 3px 1px #888;} 
+.esgi-form-holder form input {margin-bottom: 16px;}
+.esgi-form-holder form button {display: block; padding: 4px; margin: 0 auto; cursor: pointer; background: #fff; border-radius: 3px;border: 1px #888 solid; -webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease;-o-transition: all 0.4s ease; transition: all 0.4s ease;}
+.esgi-form-holder form button:hover {background: #007ba5; border-color: #007ba5; color: #f5f5f5}
+/* - END Main - */
+
+/* - Footer - */
+#esgi-footer {width: 100%; box-sizing: border-box; padding: 8px; border-top: solid 2px #007ba5;}
+#esgi-footer span {transform: translateY(-75%); display: inline-block; margin-left: 32px; padding-left: 40px; border-left: solid 1.5px #4c4c4c;}
+/* - END Footer - */
+
+/* ~ END Styles ~ */
+
+/* ~ Responsive ~ */
+@media screen and (max-width: 1240px) {
+    #esgi-straightLine {width: 1240px;}
+    .esgi-grid {margin-right: 0; margin-left: 0;}
+    #esgi-footer {width: 1240px;}
+    #esgi-footer .esgi-section {width: 100%;}
+}
+
+@media screen and (max-width: 1040px) {
+    #esgi-straightLine {width: 100%;}
+    .esgi-section {width: calc(100% - 20px);}
+    #esgi-footer {width: 100%;}
+}
+
+@media screen and (max-width: 768px) {
+    .esgi-grid {min-height: 0px; height: auto;}
+    .esgi-grid-cell {float: none; height: 100%;}
+    .esgi-grid-gutter {margin-right: 10px; margin-left: 10px; height: 100%;}
+    .esgi-clear {clear: both; line-height: 0;}
+    .esgi-grid1 {width: 100%;}
+    .esgi-grid2 {width: 100%;} 
+    .esgi-grid3 {width: 100%;}
+    .esgi-grid4 {width: 100%;}
+    .esgi-grid5 {width: 100%;}
+    .esgi-grid6 {width: 100%;}
+    .esgi-grid7 {width: 100%;}
+    .esgi-grid8 {width: 100%;}
+    .esgi-grid9 {width: 100%;}
+    .esgi-grid10 {width: 100%;}
+    .esgi-grid11 {width: 100%;}
+    .esgi-grid12 {width: 100%;}
+
+    .esgi-section {width: auto}
+
+    #esgi-footer span {float: right; transform: translateY(0%); margin: 0; padding: 0; border-left: none; width: 120px; text-align: right;}
+}
+/* ~ END Responsive ~ */
