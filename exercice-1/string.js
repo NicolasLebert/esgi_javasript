@@ -25,7 +25,7 @@ function camelCase (string) {
     }else{ return string;}
 }
 
-console.log(calmelCase("toggle case is the coolest"));
+console.log(camelCase("toggle case is the coolest"));
 
 function prop_access(obj, gateway) {
     
