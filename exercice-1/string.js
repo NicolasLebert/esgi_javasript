@@ -8,7 +8,7 @@ function ucfirst(string) {
 
 // console.log(ucfirst("hello wolrd!"));
 
-function calmelCase(string) {
+function camelCase (string) {
     if (typeof string === "string") {
         string = string.toLowerCase();
         do {
