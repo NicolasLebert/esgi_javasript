@@ -22,7 +22,7 @@ function camelCase (string) {
         } while (string.search(/(\W|_)/g) != -1);
         
         return ucfirst(string);
-    }else{ return string;}
+    }else{ return "";}
 }
 
 console.log(camelCase("toggle case is the coolest"));
