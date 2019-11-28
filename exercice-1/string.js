@@ -23,7 +23,7 @@ function calmelCase(string) {
     return ucfirst(string);
 }
 
-console.log(calmelCase8("saLut a tous_je_suis nicolas lebert"));
+console.log(calmelCase("toggle case is the coolest"));
 
 function prop_access(obj, gateway) {
     
