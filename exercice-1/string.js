@@ -9,18 +9,20 @@ function ucfirst(string) {
 // console.log(ucfirst("hello wolrd!"));
 
 function calmelCase(string) {
-    string = string.toLowerCase();
-    do {
-        let pos = string.search(/(\W|_)/g);
-
-        let letterToUpp = string.substr(pos + 1, 1);
-        string = string.substring(0, pos) + string.substring(pos).replace(letterToUpp, letterToUpp.toUpperCase());
-
-        string = string.substr(0, pos) + string.substr(pos + 1);
-
-    } while (string.search(/(\W|_)/g) != -1);
-
-    return ucfirst(string);
+    if (typeof string === "string") {
+        string = string.toLowerCase();
+        do {
+            let pos = string.search(/(\W|_)/g);
+    
+            let letterToUpp = string.substr(pos + 1, 1);
+            string = string.substring(0, pos) + string.substring(pos).replace(letterToUpp, letterToUpp.toUpperCase());
+    
+            string = string.substr(0, pos) + string.substr(pos + 1);
+    
+        } while (string.search(/(\W|_)/g) != -1);
+        
+        return ucfirst(string);
+    }else{ return string;}
 }
 
 console.log(calmelCase("toggle case is the coolest"));
