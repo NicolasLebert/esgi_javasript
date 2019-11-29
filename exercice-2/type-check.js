@@ -72,4 +72,4 @@ function type_check_v1(typedVariable, type) {
     }
 }
 
-console.log(type_check("string", "string"))
+console.log(type_check_v1("string", "string"))
