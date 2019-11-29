@@ -31,7 +31,7 @@ function type_check_v1(typedVariable, type) {
             if (Array.isArray(typedVariable)) {return comparison("array", type);}
             else{
                 if (typedVariable == null) {return comparison("null", type);}
-                else{return comparison("Object", type);}
+                else{return comparison("object", type);}
             }
             break;
     }
@@ -43,5 +43,5 @@ console.log(type_check_v1(true, "boolean"))
 console.log(type_check_v1(undefined, "undefined"))
 console.log(type_check_v1(function(){}, "function"))
 console.log(type_check_v1(null, "null"))
-console.log(type_check_v1([0,1,2,3,4], "array"))
-console.log(type_check_v1(new Object({toto: 123}), "Object"))
+console.log(type_check_v1([0,1,2,3,4], "object"))
+console.log(type_check_v1(new Object({toto: 123}), "object"))
