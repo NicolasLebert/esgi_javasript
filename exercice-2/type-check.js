@@ -40,7 +40,7 @@ let prairie = new Object(),
 
 // console.log(prairie[animal]);
 
-function type_check(typedVariable, type) {
+function type_check_v1(typedVariable, type) {
     function comparison(type1, type2) {
         return typeof type1 == type2;
     }
