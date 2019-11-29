@@ -1,49 +1,10 @@
-// console.log("Hello world !");
-
-function ucfirst(string) {
-    letterUpp = string[0].toUpperCase();
-    string = string.substr(1);
-    return letterUpp + string;
-}
-
-// console.log(ucfirst("hello wolrd!"));
-
-function camelCase (string) {
-    if (typeof string === "string") {
-        string = string.toLowerCase();
-        do {
-            let pos = string.search(/(\W|_)/g);
-    
-            let letterToUpp = string.substr(pos + 1, 1);
-            string = string.substring(0, pos) + string.substring(pos).replace(letterToUpp, letterToUpp.toUpperCase());
-    
-            string = string.substr(0, pos) + string.substr(pos + 1);
-    
-        } while (string.search(/(\W|_)/g) != -1);
-        
-        return ucfirst(string);
-    }else{ return "";}
-}
-
-// console.log(camelCase("toggle case is the coolest"));
-
-function prop_access(obj, gateway) {
-    
-}
-
-let prairie = new Object(),
-    animal = new Object(),
-        type = new Object(),
-            name = "Chien";
-
-// prairie.animal.type.name = "Chien"
-
-// console.log(prairie[animal]);
-
 function type_check_v1(typedVariable, type) {
     function comparison(type1, type2) {
-        return typeof type1 == type2;
+        console.log(type1 + " | " + type2);
+        return type1 == type2;
     }
+
+    console.log(typeof typedVariable);
 
     switch (typeof typedVariable) {
         case "string":
@@ -63,13 +24,18 @@ function type_check_v1(typedVariable, type) {
             break;
 
         case "object":
-            if (Array.isArray(typedVariable)) {
-                return comparison("Array", type);
-            }else{
-                return comparison("Object", type);
+            if (Array.isArray(typedVariable)) {return comparison("array", type);}
+            else{
+                if (typedVariable == null) {return comparison("null", type);}
+                else{return comparison("Object", type);}
             }
             break;
     }
 }
 
 console.log(type_check_v1("string", "string"))
+console.log(type_check_v1(8, "number"))
+console.log(type_check_v1(true, "boolean"))
+console.log(type_check_v1(null, "null"))
+console.log(type_check_v1([0,1,2,3,4], "array"))
+console.log(type_check_v1(new Object({toto: 123}), "Object"))
