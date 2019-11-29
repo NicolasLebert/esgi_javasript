@@ -25,7 +25,7 @@ function camelCase (string) {
     }else{ return "";}
 }
 
-console.log(camelCase("toggle case is the coolest"));
+// console.log(camelCase("toggle case is the coolest"));
 
 function prop_access(obj, gateway) {
     
@@ -39,3 +39,35 @@ let prairie = new Object(),
 // prairie.animal.type.name = "Chien"
 
 // console.log(prairie[animal]);
+
+function type_check(typedVariable, type) {
+    function comparison(type1, type2) {
+        return typeof type1 == type2;
+    }
+
+    switch (typeof typedVariable) {
+        case "string":
+            return comparison("string", type);
+            break;
+    
+        case "number":
+            return comparison("number", type);
+            break;
+
+        case "boolean":
+            return comparison("boolean", type);
+            break;
+
+        case "undefined":
+            return comparison("undefined", type);
+            break;
+
+        case "object":
+            if (Array.isArray(typedVariable)) {
+                return comparison("Array", type);
+            }else{
+                return comparison("Object", type);
+            }
+            break;
+    }
+}
