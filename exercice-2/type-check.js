@@ -22,6 +22,10 @@ function type_check_v1(typedVariable, type) {
         case "undefined":
             return comparison("undefined", type);
             break;
+        
+        case "function":
+            return comparison("function", type);
+            break;
 
         case "object":
             if (Array.isArray(typedVariable)) {return comparison("array", type);}
@@ -36,6 +40,8 @@ function type_check_v1(typedVariable, type) {
 console.log(type_check_v1("string", "string"))
 console.log(type_check_v1(8, "number"))
 console.log(type_check_v1(true, "boolean"))
+console.log(type_check_v1(undefined, "undefined"))
+console.log(type_check_v1(function(){}, "function"))
 console.log(type_check_v1(null, "null"))
 console.log(type_check_v1([0,1,2,3,4], "array"))
 console.log(type_check_v1(new Object({toto: 123}), "Object"))
