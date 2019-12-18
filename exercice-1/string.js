@@ -6,7 +6,7 @@ function ucfirst(string) {
     return letterUpp + string;
 }
 
-// console.log(ucfirst("hello wolrd!"));
+//console.log(ucfirst("hello wolrd!"));
 
 function camelCase (string) {
     if (typeof string === "string") {
@@ -72,4 +72,4 @@ function type_check(typedVariable, type) {
     }
 }
 
-console.log(type_check("string", "string"))
+//console.log(type_check("string", "string"))
